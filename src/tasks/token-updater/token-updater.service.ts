@@ -47,9 +47,7 @@ export class TokenUpdaterService {
       let access_token;
       let attempts = 0;
 
-      while (true) {
-        if (attempts > 20) break;
-
+      while (attempts <= 20) {
         try {
           access_token = await getQiwiToken(el.phone, el.password);
 
