@@ -1,0 +1,19 @@
+name: Regular lint and build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies and lint, then build
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+      - run: npm i -f
+      - run: npm run lint
+      - run: npm run build

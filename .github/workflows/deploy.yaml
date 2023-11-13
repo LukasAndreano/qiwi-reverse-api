@@ -1,4 +1,4 @@
-name: Regular lint, build and deploy to private registry (if commit message contains ~deploy~)
+name: Deploy docker image to private registry (if commit message contains ~deploy~)
 
 on:
   push:
@@ -6,17 +6,6 @@ on:
       - main
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Install dependencies and lint, then build
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18.x'
-      - run: npm i -f
-      - run: npm run lint
-      - run: npm run build
   docker:
     name: Create docker image and push to private registry
     runs-on: ubuntu-latest
