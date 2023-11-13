@@ -39,7 +39,7 @@ yarn dev
 
 ## Todo
 
-- [ ] Авто-деплой на локальный Docker Registry
+- [x] Авто-деплой на локальный Docker Registry
 - [ ] Написать автотесты
 
 ## Методы API
