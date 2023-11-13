@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: '18.x'
       - run: npm i -f
-      - run: npm lint
+      - run: npm run lint
       - run: npm run build
   docker:
     name: Create docker image and push to private registry
