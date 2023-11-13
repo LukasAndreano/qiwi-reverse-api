@@ -2,9 +2,14 @@
   "name": "qiwi-reverse-api",
   "version": "1.0.0",
   "description": "QIWI Reverse API",
-  "author": "Nikita Balin <n.balin@koka.team>",
+  "author": "Nikita Balin <n.balin@koka.team> (https://koka.team)",
   "private": false,
   "license": "MIT",
+  "homepage": "https://github.com/LukasAndreano/qiwi-reverse-api",
+  "bugs": {
+    "url": "https://github.com/LukasAndreano/qiwi-reverse-api/issues",
+    "email": "n.balin@koka.team"
+  },
   "scripts": {
     "build": "nest build",
     "start": "nest start",
